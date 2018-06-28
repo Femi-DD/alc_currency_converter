@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="The Currency Converter converts various currencies using the API" />
+      <meta name="keywords" content="currency, convert, api" />
+      <meta name="author" content="Kole-Ibrahim AbdulQudus" />
+      <title>Currency Converter</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Currency Converter</title>
+   </head>
+
+   <body class="dark">
+
+      <section id="auth">
+         <div class="container">
+
+            <div id="converter" class="converter">
+               <h2>Currency Converter</h2>
+               <p>
+                  Convert to multiple currencies around the world.
+               </p>
+               <form method="POST" action="">
+                  <div>
+                     <label>From</label>
+                     <select name="from">
+                        <option value="">NGN</option>
+                     </select>
+                  </div>
+                  <div>
+                     <label>To</label>
+                     <select name="to">
+                        <option value="">USD</option>
+                     </select>
+                  </div>
+                  <div>
+                     <label>Value</label>
+                     <input type="text" name="value" placeholder="1" required/>
+                  </div>
+                  <div>
+                     <label>Result</label>
+                     <input type="text" name="result" placeholder="1" readonly/>
+                  </div>
+                  <button class="button" type="submit">Convert</button>
+               </form>
+            </div>
+
+         </div>
+      </section>
+
+   </body>
+
+   <script type="text/javascript" src="app.js"></script>
+
+</html>
