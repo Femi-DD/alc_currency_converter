@@ -1,10 +1,10 @@
 let newCacheName = 'CC_v1';
 
 let assetsToCache = [
-  '/currency-converter/',
-  '/currency-converter/index.html',
-  '/currency-converter/css/style.css',
-  '/currency-converter/js/index.js'
+  '/alc_currency_converter/',
+  '/alc_currency_converter/index.html',
+  '/alc_currency_converter/css/style.css',
+  '/alc_currency_converter/js/index.js'
 ];
 
 self.addEventListener('install', (event) => {
