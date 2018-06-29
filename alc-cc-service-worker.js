@@ -22,7 +22,7 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(cacheNames.map((currentCacheName) => {
-        if (currentCacheName !== newCacheName) {
+        if (currentCacheName !== newCacheName && currentCacheName.startsWith('alc_currency_converter')) {
           console.log('[ServiceWorker] Deleting old cache : ' + currentCacheName);
           return caches.delete(currentCacheName);
         }
