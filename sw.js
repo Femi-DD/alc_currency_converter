@@ -1,4 +1,4 @@
-let newCacheName = 'CC_v1';
+let newCacheName = 'alc_currency_converter_v1';
 
 let assetsToCache = [
   '/alc_currency_converter/',
