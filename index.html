@@ -23,28 +23,28 @@
             <p>
                Convert to multiple currencies around the world.
             </p>
-            <form method="POST" action="">
+            <form>
                <div>
                   <label>From</label>
-                  <select id="from" name="from">
+                  <select id="from" name="from" required>
                      <option>Select Currency e.g NGN</option>
                   </select>
                </div>
                <div>
                   <label>To</label>
-                  <select id="to" name="to">
+                  <select id="to" name="to" required>
                      <option>Select Currency e.g USD</option>
                   </select>
                </div>
                <div>
                   <label>Value</label>
-                  <input type="text" name="value" placeholder="1" required/>
+                  <input type="text" id="to_convert" placeholder="1" required/>
                </div>
                <div>
                   <label>Result</label>
-                  <input type="text" name="result" placeholder="1" readonly/>
+                  <input type="text" id="result" placeholder="1" readonly/>
                </div>
-               <button type="submit">Convert</button>
+               <button onclick="doConvert()">Convert</button>
             </form>
          </div>
 
@@ -53,7 +53,8 @@
 
 </body>
 
-<script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+<script type="text/javascript" src="./js/idb.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 
 </html>
